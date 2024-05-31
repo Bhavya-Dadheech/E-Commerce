@@ -20,8 +20,20 @@ export default function BottomNav() {
       onChange={handleChange}
     >
       <BottomNavigationAction component={Link} to="/" label="Home" value="home" icon={<HomeIcon />} />
-      <BottomNavigationAction label="WishList" value="Wishlist" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Cart" value="cart" icon={<ShoppingCartOutlinedIcon />} />
+      <BottomNavigationAction
+        component={Link}
+        to="/wishlist"
+        label="WishList"
+        value="Wishlist"
+        icon={<FavoriteIcon />}
+      />
+      <BottomNavigationAction
+        component={Link}
+        to="/cart"
+        label="Cart"
+        value="cart"
+        icon={<ShoppingCartOutlinedIcon />}
+      />
     </BottomNavigation>
   );
 }

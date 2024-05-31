@@ -3,7 +3,7 @@ import { SET_AUTH } from "./authenticationTypes";
 const serializedState = localStorage.getItem("appState");
 
 export const authState = serializedState
-  ? JSON.parse(serializedState).user
+  ? JSON.parse(serializedState).auth
   : {
       username: "",
       password: ""

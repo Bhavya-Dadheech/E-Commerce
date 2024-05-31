@@ -17,7 +17,7 @@ const SideNav = () => {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <div className="sm:hidden flex bg-[#E1AFD1] items-center py-4 justify-between fixed w-full top-0 z-[9999]">
+        <div className="sm:hidden flex bg-[#E1AFD1] items-center py-4 justify-between fixed w-full top-0 z-[999]">
           <div
             id="toggle"
             onClick={showSidebar}
@@ -42,7 +42,7 @@ const SideNav = () => {
             </div>
           </div>
           <div>
-            <span className="dosis-600 text-lg text-[#102C57]">E-Commerce</span>
+            <span className="poppins-semibold text-lg text-[#102C57]">E-Commerce</span>
           </div>
           <div className="flex flex-row mr-4">
             <button type="button" className="hidden sm:block font-bold relative p-1 text-[#102C57]">
@@ -106,7 +106,7 @@ const SideNav = () => {
         <div
           className={`sm:hidden h-full bg-[#E1AFD1] w-56 flex justify-center fixed ${
             sidebar ? "left-0" : "left-[-20rem]"
-          } transition-all ease-in-out delay-150 duration-300 z-10 top-[3.8rem]`}
+          } transition-all ease-in-out delay-150 duration-300 z-[999] top-[3.8rem]`}
         >
           <div className="w-full pb-4">
             {navigation.map((item, index) => {

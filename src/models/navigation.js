@@ -12,6 +12,7 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 
 const NotFound = React.lazy(() => import("../components/utility/NotFound"));
 const Home = React.lazy(() => import("../components/main/Home"));
+const FruitsVegetables = React.lazy(() => import("../components/main/grocery/FruitsVegetables"));
 
 export const navigation = [
   {
@@ -35,7 +36,7 @@ export const navigation = [
         title: "Fruits & Vegetables",
         path: "/fruits&vegetables",
         icon: <SiIcons.SiInstacart style={{ color: "#102C57" }} />,
-        component: NotFound
+        component: FruitsVegetables
       },
       {
         title: "Dairy",

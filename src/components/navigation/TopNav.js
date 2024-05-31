@@ -5,8 +5,13 @@ import navigation from "../../models/navigation";
 import { Link, useLocation } from "react-router-dom";
 import Tooltip from "@mui/material/Tooltip";
 import CustomDropdownMenu from "../ui/CustomDropdownMenu";
+import Badge from "@mui/material/Badge";
+import { useSelector } from "react-redux";
 
 export default function TopNav({ menuIconClick }) {
+  const wishlist = useSelector((state) => state.wishlist.wishlist);
+  const cart = useSelector((state) => state.cart.cart);
+
   const [openMenu, setOpenMenu] = useState(false);
   const location = useLocation();
   const [isDropdownVisible, setDropdownVisible] = useState({ title: "", show: false });
@@ -49,7 +54,7 @@ export default function TopNav({ menuIconClick }) {
                   </button>
                 </div>
                 <div>
-                  <span className="dosis-600 text-xl text-[#102C57]">E-Commerce</span>
+                  <span className="poppins-semibold text-xl text-[#102C57]">E-Commerce</span>
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch">
                   <div className="hidden sm:ml-6 sm:inline-flex items-center">
@@ -106,13 +111,24 @@ export default function TopNav({ menuIconClick }) {
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto gap-4 sm:pr-0">
                   <Tooltip title="Your Wishlist">
                     <button type="button" className="font-bold relative p-1 text-[#102C57] tooltip hidden sm:block">
-                      <HeartIcon className="h-6 w-6" aria-hidden="true" />
+                      <Badge badgeContent={wishlist.length} color="primary">
+                        <Link to="/wishlist">
+                          <HeartIcon
+                            className="hover:scale-110 transform transition-transform duration-200 h-6 w-6"
+                            aria-hidden="true"
+                          />
+                        </Link>
+                      </Badge>
                       {/* <span className="tooltiptext">Your Wishlist</span> */}
                     </button>
                   </Tooltip>
                   <Tooltip title="Cart">
                     <button type="button" className="hidden sm:block font-bold relative p-1 text-[#102C57]">
-                      <ShoppingCartIcon className="h-6 w-6" />
+                      <Badge badgeContent={cart.length} color="primary">
+                        <Link to="/cart">
+                          <ShoppingCartIcon className="hover:scale-110 transform transition-transform duration-200 h-6 w-6" />
+                        </Link>
+                      </Badge>
                     </button>
                   </Tooltip>
                   {/* Profile dropdown */}
@@ -120,7 +136,7 @@ export default function TopNav({ menuIconClick }) {
                     <div>
                       <Tooltip title="Profile">
                         <MenuButton className="relative flex text-[#102C57]">
-                          <UserIcon className="h-6 w-6" />
+                          <UserIcon className="hover:scale-110 transform transition-transform duration-200 h-6 w-6" />
                         </MenuButton>
                       </Tooltip>
                     </div>

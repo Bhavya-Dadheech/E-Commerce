@@ -27,7 +27,7 @@ const SITEMAP = [
   {
     title: "Help Center",
     links: [
-      { title: "GitHub", path: "/GitHub", href: "https://github.com/Bhavya-Dadheech" },
+      { title: "GitHub", path: "/GitHub", href: "https://github.com/Bhavya-Dadheech/E-Commerce" },
       { title: "LinkedIn", path: "/LinkedIn", href: "https://www.linkedin.com/in/bhavya-dadheech-64b3bb179/" },
       { title: "Twitter", path: "/Twitter", href: "https://x.com/bhavya_dadheech" },
       { title: "Contact Us", path: "/Contact-Us" }
@@ -45,12 +45,11 @@ export function Footer() {
       top: 0,
       behavior: "smooth"
     });
-    debugger;
     navigate(path);
   };
 
   return (
-    <footer className="fixed bottom-0 w-full bg-[#E1AFD1] sm:mb-0 mb-14">
+    <footer className="w-full bg-[#E1AFD1] sm:mb-0 mb-14">
       <div className="mx-auto w-full max-w-7xl px-0 sm:px-8">
         <div className="mx-auto grid w-full grid-cols-1 gap-0 sm:gap-8 py-6 sm:py-12 md:grid-cols-3 lg:grid-cols-3">
           {SITEMAP.map(({ title, links }, index) => (

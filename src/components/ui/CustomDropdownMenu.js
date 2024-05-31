@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CustomDropdownMenu = ({ subNavs }) => {
   return (
-    <div className="w-max absolute rounded py-2 bg-white shadow-lg transition-all duration-300 ease-linear">
+    <div className="z-[999] w-max absolute rounded py-2 bg-white shadow-lg transition-all duration-300 ease-linear">
       <ul className="list-none p-0 m-0">
         {subNavs.map((item) => (
           <li
