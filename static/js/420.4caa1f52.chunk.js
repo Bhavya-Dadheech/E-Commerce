@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunke_commerce=self.webpackChunke_commerce||[]).push([[420],{7420:(e,c,r)=>{r.r(c),r.d(c,{default:()=>n});r(5043);var u=r(579);function n(){return(0,u.jsx)("div",{children:"Home"})}}}]);
+//# sourceMappingURL=420.4caa1f52.chunk.js.map

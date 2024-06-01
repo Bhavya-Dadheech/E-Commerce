@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/E-Commerce/static/css/main.07d9840b.css",
+    "main.js": "/E-Commerce/static/js/main.56637613.js",
+    "static/js/886.305ec159.chunk.js": "/E-Commerce/static/js/886.305ec159.chunk.js",
+    "static/js/380.71062892.chunk.js": "/E-Commerce/static/js/380.71062892.chunk.js",
+    "static/js/489.30b38d97.chunk.js": "/E-Commerce/static/js/489.30b38d97.chunk.js",
+    "static/js/987.fc91ff8d.chunk.js": "/E-Commerce/static/js/987.fc91ff8d.chunk.js",
+    "static/js/420.4caa1f52.chunk.js": "/E-Commerce/static/js/420.4caa1f52.chunk.js",
+    "static/js/377.e4902aac.chunk.js": "/E-Commerce/static/js/377.e4902aac.chunk.js",
+    "static/js/453.4297e0f3.chunk.js": "/E-Commerce/static/js/453.4297e0f3.chunk.js",
+    "static/js/720.4d4f7929.chunk.js": "/E-Commerce/static/js/720.4d4f7929.chunk.js",
+    "static/js/166.1fc07fd3.chunk.js": "/E-Commerce/static/js/166.1fc07fd3.chunk.js",
+    "static/js/962.584eabd0.chunk.js": "/E-Commerce/static/js/962.584eabd0.chunk.js",
+    "static/media/apples.jpg": "/E-Commerce/static/media/apples.82a282592ddcda3aa46c.jpg",
+    "static/media/No_Image_Available.jpg": "/E-Commerce/static/media/No_Image_Available.e1ce751ef1b590f719f9.jpg",
+    "index.html": "/E-Commerce/index.html",
+    "main.07d9840b.css.map": "/E-Commerce/static/css/main.07d9840b.css.map",
+    "main.56637613.js.map": "/E-Commerce/static/js/main.56637613.js.map",
+    "886.305ec159.chunk.js.map": "/E-Commerce/static/js/886.305ec159.chunk.js.map",
+    "380.71062892.chunk.js.map": "/E-Commerce/static/js/380.71062892.chunk.js.map",
+    "489.30b38d97.chunk.js.map": "/E-Commerce/static/js/489.30b38d97.chunk.js.map",
+    "987.fc91ff8d.chunk.js.map": "/E-Commerce/static/js/987.fc91ff8d.chunk.js.map",
+    "420.4caa1f52.chunk.js.map": "/E-Commerce/static/js/420.4caa1f52.chunk.js.map",
+    "377.e4902aac.chunk.js.map": "/E-Commerce/static/js/377.e4902aac.chunk.js.map",
+    "453.4297e0f3.chunk.js.map": "/E-Commerce/static/js/453.4297e0f3.chunk.js.map",
+    "720.4d4f7929.chunk.js.map": "/E-Commerce/static/js/720.4d4f7929.chunk.js.map",
+    "166.1fc07fd3.chunk.js.map": "/E-Commerce/static/js/166.1fc07fd3.chunk.js.map",
+    "962.584eabd0.chunk.js.map": "/E-Commerce/static/js/962.584eabd0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07d9840b.css",
+    "static/js/main.56637613.js"
+  ]
+}
