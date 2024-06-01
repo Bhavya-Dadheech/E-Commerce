@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { MdDelete } from "react-icons/md";
-import { setCart, removeWishList } from "../../redux";
+import { addCart, removeWishList } from "../../redux";
 import NoImage from "../../assets/images/No_Image_Available.jpg";
 import { useSnackbar } from "notistack";
 import { useNavigate } from "react-router-dom";
@@ -96,7 +96,7 @@ export default function Wishlist() {
                     if (isItemInCart(item)) {
                       navigate("/cart");
                     } else {
-                      dispatch(setCart(item));
+                      dispatch(addCart(item));
                       enqueueSnackbar("Item added to cart!", { variant: "success" });
                     }
                   }}

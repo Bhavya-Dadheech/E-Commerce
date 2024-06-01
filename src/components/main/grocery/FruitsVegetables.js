@@ -3,7 +3,7 @@ import data from "../../../models/FruitsAndVegetables.json";
 import NoImage from "../../../assets/images/No_Image_Available.jpg";
 import { MdAddShoppingCart, MdOutlineShoppingCartCheckout } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
-import { setCart, addWishList, removeWishList } from "../../../redux";
+import { addCart, addWishList, removeWishList } from "../../../redux";
 import { HiHeart } from "react-icons/hi2";
 import apples from "../../../assets/images/apples.jpg";
 import { useSnackbar } from "notistack";
@@ -30,7 +30,7 @@ export default function FruitsVegetables() {
   };
 
   const addToCart = (item) => {
-    dispatch(setCart(item));
+    dispatch(addCart(item));
     enqueueSnackbar("Item added to cart!", { variant: "success" });
   };
 
