@@ -13,6 +13,7 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 const NotFound = React.lazy(() => import("../components/utility/NotFound"));
 const Home = React.lazy(() => import("../components/main/Home"));
 const FruitsVegetables = React.lazy(() => import("../components/main/grocery/FruitsVegetables"));
+const DairyProducts = React.lazy(() => import("../components/main/grocery/DairyProducts"));
 
 export const navigation = [
   {
@@ -42,7 +43,7 @@ export const navigation = [
         title: "Dairy",
         path: "/dairy",
         icon: <LuIcons.LuMilk style={{ color: "#102C57" }} />,
-        component: NotFound
+        component: DairyProducts
       },
       {
         title: "Personal Care",

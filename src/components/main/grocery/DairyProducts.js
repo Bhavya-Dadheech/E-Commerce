@@ -1,11 +1,11 @@
 import React from "react";
-import { fruits, vegetables } from "../../../models/FruitsAndVegetables";
+import { dairy } from "../../../models/DairyProducts";
 import { useDispatch, useSelector } from "react-redux";
 import { addCart, addWishList, removeWishList } from "../../../redux";
 import { useSnackbar } from "notistack";
 import ItemComponent from "../../ui/ItemComponent";
 
-export default function FruitsVegetables() {
+export default function DairyProducts() {
   const { enqueueSnackbar } = useSnackbar();
 
   const formatPrice = (price) => {
@@ -43,9 +43,9 @@ export default function FruitsVegetables() {
   return (
     <div className="flex flex-col w-full gap-y-10 justify-center">
       <span className="text-xl sm:text-3xl self-center text-[#102C57] font-medium">Fruits & Vegetables</span>
-      {/* Iterate over fruits */}
+      {/* Iterate over Dairy products */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-2 sm:gap-x-5 gap-y-5 sm:gap-y-10">
-        {fruits.map((item) => (
+        {dairy.map((item) => (
           <ItemComponent
             key={item.id}
             item={item}
@@ -53,20 +53,6 @@ export default function FruitsVegetables() {
             handleWishList={handleWishList}
             isItemInCart={isItemInCart}
             addToCart={addToCart}
-            formatPrice={formatPrice}
-          />
-        ))}
-      </div>
-      {/* Iterate over vegetables */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-2 sm:gap-x-5 gap-y-5 sm:gap-y-10">
-        {vegetables.map((item) => (
-          <ItemComponent
-            key={item.id}
-            item={item}
-            isItemInWishlist={isItemInWishlist}
-            handleWishList={handleWishList}
-            isItemInCart={isItemInCart}
-            addToCart={addCart}
             formatPrice={formatPrice}
           />
         ))}
