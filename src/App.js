@@ -30,7 +30,7 @@ function App() {
         autoHideDuration={1500}
         anchorOrigin={{
           vertical: "top",
-          horizontal: "center"
+          horizontal: "start"
         }}
       >
         <div className="w-full h-full flex flex-col">

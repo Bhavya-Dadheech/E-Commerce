@@ -1,5 +1,5 @@
 import React from "react";
-import { fruits, vegetables } from "../../../models/FruitsAndVegetables";
+import { fruits, vegetables } from "../../../models/productlists/fruitsAndVegetables";
 import { useDispatch, useSelector } from "react-redux";
 import { addCart, addWishList, removeWishList } from "../../../redux";
 import { useSnackbar } from "notistack";
@@ -67,7 +67,7 @@ export default function FruitsVegetables() {
             isItemInWishlist={isItemInWishlist}
             handleWishList={handleWishList}
             isItemInCart={isItemInCart}
-            addToCart={addCart}
+            addToCart={addToCart}
             formatPrice={formatPrice}
           />
         ))}

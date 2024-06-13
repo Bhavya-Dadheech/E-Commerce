@@ -3,6 +3,7 @@ import NoImage from "../../assets/images/No_Image_Available.jpg";
 import { HiHeart, HiOutlineHeart } from "react-icons/hi2";
 import { MdAddShoppingCart, MdOutlineShoppingCartCheckout } from "react-icons/md";
 import Tooltip from "@mui/material/Tooltip";
+import { useNavigate } from "react-router-dom";
 
 export default function ItemComponent({
   item,
@@ -12,6 +13,8 @@ export default function ItemComponent({
   addToCart,
   formatPrice
 }) {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col shadow-md hover:shadow-xl rounded hover:scale-105 transition duration-300">
       <div className="relative w-full h-52 sm:h-72">
@@ -63,6 +66,9 @@ export default function ItemComponent({
                 <Tooltip title="View Cart">
                   <button>
                     <MdOutlineShoppingCartCheckout
+                      onClick={() => {
+                        navigate("/cart");
+                      }}
                       className={`p-2 w-12 h-12 transform transition-transform duration-300 text-[#102C57] bg-white rounded-full 
                 hover:text-white hover:bg-[#102C57] hover:shadow-md hover:shadow-[#7469B6] hover:scale-125 hover:cursor-pointer
                 `}
@@ -88,7 +94,9 @@ export default function ItemComponent({
         </div>
       </div>
       <span className="text-[#102C57] poppins-medium text-lg mx-2">{item.name}</span>
-      <span className="text-[#7469B6] poppins-regular text-lg mx-2">₹ {formatPrice(item.price)} / kg</span>
+      <span className="text-[#7469B6] poppins-regular text-lg mx-2">
+        ₹ {formatPrice(item.price.amount)}&nbsp;{item.price.unit}
+      </span>
     </div>
   );
 }

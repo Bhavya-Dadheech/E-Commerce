@@ -80,7 +80,7 @@ export default function Wishlist() {
                 </div>
                 <div className="flex flex-col items-start p-2 mx-2 sm:mx-0">
                   <span className="poppins-medium text-sm sm:text-lg">{item.name}</span>
-                  <span className="poppins-regular text-sm sm:text-lg">₹ {item.price.toFixed(2)} / kg</span>
+                  <span className="poppins-regular text-sm sm:text-lg">₹ {item.price.amount.toFixed(2)} / kg</span>
                 </div>
               </div>
               <div className="flex flex-col justify-between sm:items-end mx-2 mb-2 sm:mx-0 sm:mb-0">

@@ -10,7 +10,7 @@ export default function Cart() {
   // Function to calculate the total price of the cart items
   const calculateTotalPrice = () => {
     return cart.reduce((total, cartItem) => {
-      return total + cartItem.item.price * cartItem.quantity;
+      return total + cartItem.item.price.amount * cartItem.quantity;
     }, 0);
   };
 
@@ -39,7 +39,9 @@ export default function Cart() {
                   </div>
                   <div className="flex flex-col gap-y-4 col-span-4">
                     <span>{cartItem.item.name}</span>
-                    <span>₹ {cartItem.item.price}</span>
+                    <span>
+                      ₹ {cartItem.item.price.amount} &nbsp; {cartItem.item.price.unit}
+                    </span>
                     <div className="flex flex-row">
                       <button
                         className="border-slate-400 py-0.5 px-2 border rounded-full mx-1"
