@@ -30,7 +30,7 @@ export default function TopNav({ menuIconClick }) {
 
   return (
     <>
-      <Disclosure as="nav" className="hidden sm:block bg-[#E1AFD1]">
+      <Disclosure as="nav" className="hidden sm:block bg-[#E1AFD1] fixed w-full z-[999]">
         {({ open }) => (
           <>
             <div className="mx-auto px-2 sm:px-6 lg:px-8">

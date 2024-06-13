@@ -42,7 +42,7 @@ export default function FruitsVegetables() {
 
   return (
     <div className="flex flex-col w-full gap-y-10 justify-center">
-      <span className="text-xl sm:text-3xl self-center text-[#102C57] font-medium">Fruits & Vegetables</span>
+      <span className="text-xl sm:text-3xl self-center text-[#102C57] font-medium">Fruits</span>
       {/* Iterate over fruits */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-2 sm:gap-x-5 gap-y-5 sm:gap-y-10">
         {fruits.map((item) => (
@@ -57,6 +57,7 @@ export default function FruitsVegetables() {
           />
         ))}
       </div>
+      <span className="text-xl sm:text-3xl self-center text-[#102C57] font-medium">Vegetables</span>
       {/* Iterate over vegetables */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-2 sm:gap-x-5 gap-y-5 sm:gap-y-10">
         {vegetables.map((item) => (
