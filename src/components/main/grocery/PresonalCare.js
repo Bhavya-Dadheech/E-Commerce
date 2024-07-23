@@ -41,7 +41,7 @@ export default function PresonalCare() {
 
   return (
     <div className="flex flex-col w-full gap-y-10 justify-center">
-      <span className="text-xl sm:text-3xl self-center text-[#102C57] font-medium">Presonal Care</span>
+      <span className="text-xl sm:text-3xl self-center text-[#102C57] font-medium">Presonal Care Products </span>
       {/* Iterate over Dairy products */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-2 sm:gap-x-5 gap-y-5 sm:gap-y-10">
         {personalCareProducts.map((item) => (

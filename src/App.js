@@ -40,7 +40,7 @@ function App() {
           <div
             className={`${
               location.pathname === "/"
-                ? "min-h-[49vh] my-14 sm:p-12 sm:m-12 py-6 px-2 m-3 mt-20"
+                ? "min-h-[49vh] my-12 sm:px-0 px-2 sm:py-0 py-6 sm:mx-8 mx-2 sm:mt-16 mt-20"
                 : "min-h-[49vh] my-14 sm:p-12 sm:mx-12 py-6 px-2 mx-2 mt-20"
             }`}
           >

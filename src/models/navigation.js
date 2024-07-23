@@ -11,10 +11,11 @@ import * as TbIcon from "react-icons/tb";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 
 const NotFound = React.lazy(() => import("../components/utility/NotFound"));
-const Home = React.lazy(() => import("../components/main/Home"));
+const HomePage = React.lazy(() => import("../components/main/HomePage"));
 const FruitsVegetables = React.lazy(() => import("../components/main/grocery/FruitsVegetables"));
 const DairyProducts = React.lazy(() => import("../components/main/grocery/DairyProducts"));
 const PresonalCare = React.lazy(() => import("../components/main/grocery/PresonalCare"));
+const HouseHold = React.lazy(() => import("../components/main/grocery/HouseHold"));
 
 export const navigation = [
   {
@@ -23,7 +24,7 @@ export const navigation = [
     icon: <DashboardIcon style={{ color: "#102C57" }} />,
     iconClosed: <RiIcons.RiArrowDownSFill style={{ color: "#102C57" }} />,
     iconOpened: <RiIcons.RiArrowUpSFill style={{ color: "#102C57" }} />,
-    component: Home
+    component: HomePage
   },
   {
     title: "Grocery",
@@ -56,7 +57,7 @@ export const navigation = [
         title: "Household",
         path: "/household",
         icon: <Fa6Icons.FaCartShopping style={{ color: "#102C57" }} />,
-        component: NotFound
+        component: HouseHold
       }
     ]
   },

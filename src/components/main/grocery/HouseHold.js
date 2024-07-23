@@ -1,11 +1,11 @@
 import React from "react";
-import { dairy } from "../../../models/productlists/dairyProducts";
 import { useDispatch, useSelector } from "react-redux";
 import { addCart, addWishList, removeWishList } from "../../../redux";
 import { useSnackbar } from "notistack";
 import ItemComponent from "../../ui/ItemComponent";
+import { householdProducts } from "../../../models/productlists/houseHold";
 
-export default function DairyProducts() {
+export default function HouseHold() {
   const { enqueueSnackbar } = useSnackbar();
 
   const formatPrice = (price) => {
@@ -42,10 +42,10 @@ export default function DairyProducts() {
 
   return (
     <div className="flex flex-col w-full gap-y-10 justify-center">
-      <span className="text-xl sm:text-3xl self-center text-[#102C57] font-medium">Dairy Products</span>
+      <span className="text-xl sm:text-3xl self-center text-[#102C57] font-medium">Household Products</span>
       {/* Iterate over Dairy products */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-2 sm:gap-x-5 gap-y-5 sm:gap-y-10">
-        {dairy.map((item) => (
+        {householdProducts.map((item) => (
           <ItemComponent
             key={item.id}
             item={item}
